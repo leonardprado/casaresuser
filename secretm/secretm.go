@@ -9,19 +9,21 @@ import (
 	"github.com/leonardprado/casaresuser/awsgo"
 	"github.com/leonardprado/casaresuser/models"
 )
+
 func GetSecret(nombreSecret string) (models.SecretRDSJson, error) {
 	var datosSecret models.SecretRDSJson
-	fmt.Println(" > Pido Secreto "+ nombreSecret)
+	fmt.Println(" > Pido Secreto " + nombreSecret)
 
 	svc := secretsmanager.NewFromConfig(awsgo.Cfg)
 	clave, err := svc.GetSecretValue(awsgo.Ctx, &secretsmanager.GetSecretValueInput{
 		SecretId: aws.String(nombreSecret),
-		})
+	})
 	if err != nil {
 		fmt.Println(err.Error())
 		return datosSecret, err
 	}
+
 	json.Unmarshal([]byte(*clave.SecretString), &datosSecret)
-	fmt.Println(" > Lectura Secret OK "+ nombreSecret)
+	fmt.Println(" > Lectura Secret OK " + nombreSecret)
 	return datosSecret, nil
 }
