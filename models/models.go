@@ -1,4 +1,6 @@
 package models
+
+/*
 type SecretRDSJson struct {
 	Username            string `json:"username"` // Alt izq + 96
 	Password            string `json:"password"`
@@ -12,3 +14,4 @@ type SignUp struct {
 	UserUUID  string `json:"UserUUID"`
 }
 
+*/

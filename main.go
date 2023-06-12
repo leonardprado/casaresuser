@@ -2,19 +2,25 @@ package main
 
 import (
 	"context"
-	"errors"
-	"fmt"
-	"os"
+	//"errors"
+	//"fmt"
+	//"os"
 	"github.com/aws/aws-lambda-go/events"
 	lambda "github.com/aws/aws-lambda-go/lambda"
-	"github.com/leonardprado/casaresuser/awsgo"
-	"github.com/leonardprado/casaresuser/bd"
-	"github.com/leonardprado/casaresuser/models"
+	//"github.com/leonardprado/casaresuser/awsgo"
+	//"github.com/leonardprado/casaresuser/bd"
+	//"github.com/leonardprado/casaresuser/models"
 )
 func main() {
 	lambda.Start(EjecutoLambda)
+
 }
 func EjecutoLambda(ctx context.Context, event events.CognitoEventUserPoolsPostConfirmation) (events.CognitoEventUserPoolsPostConfirmation, error) {
+
+
+}
+/*
+
 	awsgo.InicializoAWS()
 	if !ValidoParametros() {
 		fmt.Println("Error en los parámetros. debe enviar 'SecretName'")
@@ -44,7 +50,9 @@ func ValidoParametros() bool {
 	var traeParametro bool
 	_, traeParametro = os.LookupEnv("SecretName")
 	return traeParametro
-}
+	*/
+
+	
 	
 
 

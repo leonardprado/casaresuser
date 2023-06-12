@@ -1,12 +1,13 @@
 package secretm
 import (
-	"encoding/json"
-	"fmt"
-	"github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/aws/aws-sdk-go-v2/service/secretsmanager"
-	"github.com/leonardprado/casaresuser/awsgo"
-	"github.com/leonardprado/casaresuser/models"
+	//"encoding/json"
+	//"fmt"
+	//"github.com/aws/aws-sdk-go-v2/aws"
+	//"github.com/aws/aws-sdk-go-v2/service/secretsmanager"
+	//"github.com/leonardprado/casaresuser/awsgo"
+	//"github.com/leonardprado/casaresuser/models"
 )
+/*
 func GetSecret(nombreSecret string) (models.SecretRDSJson, error) {
 	var datosSecret models.SecretRDSJson
 	fmt.Println(" > Pido Secreto " + nombreSecret)
@@ -22,7 +23,7 @@ func GetSecret(nombreSecret string) (models.SecretRDSJson, error) {
 	fmt.Println(" > Lectura Secret OK " + nombreSecret)
 	return datosSecret, nil
 }
-
+*/
 
 
 
