@@ -10,4 +10,4 @@ func FechaMySQL() string {
 		t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), t.Second())
 		
 		
-//}
+}
