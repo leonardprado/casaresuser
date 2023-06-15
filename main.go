@@ -8,7 +8,7 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	lambda "github.com/aws/aws-lambda-go/lambda"
 	"github.com/leonardprado/casaresuser/awsgo"
-	//"github.com/leonardprado/casaresuser/bd"
+	"github.com/leonardprado/casaresuser/bd"
 	"github.com/leonardprado/casaresuser/models"
 )
 func main() {
@@ -26,7 +26,7 @@ func EjecutoLambda(ctx context.Context, event events.CognitoEventUserPoolsPostCo
 	}
 
 }
-/*
+
 
 	
 	var datos models.SignUp
@@ -49,7 +49,7 @@ func EjecutoLambda(ctx context.Context, event events.CognitoEventUserPoolsPostCo
 	return event, err
 }
 
-	*/
+	
 	func ValidoParametros() bool {
 		var traeParametro bool
 		_, traeParametro = os.LookupEnv("SecretName")

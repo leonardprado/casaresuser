@@ -1,17 +1,17 @@
 package bd
 import (
-	//"database/sql"
-	//"fmt"
-	//"os"
-	//_ "github.com/go-sql-driver/mysql"
-	//"github.com/leonardprado/casaresuser/models"
-	//"github.com/leonardprado/casaresuser/secretm"
+	"database/sql"
+	"fmt"
+	"os"
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/leonardprado/casaresuser/models"
+	"github.com/leonardprado/casaresuser/secretm"
 )
-//var SecretModel models.SecretRDSJson
-//var err error
-//var Db *sql.DB
-//func ReadSecret() error {
-	/*
+var SecretModel models.SecretRDSJson
+var err error
+var Db *sql.DB
+func ReadSecret() error {
+	
 	SecretModel, err = secretm.GetSecret(os.Getenv("SecretName"))
 	return err
 }
@@ -39,7 +39,7 @@ func ConnStr(claves models.SecretRDSJson) string {
 	fmt.Println(dsn)
 	return 
 }
-*/
+
 
 
 

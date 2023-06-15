@@ -1,12 +1,12 @@
 package bd
 import (
-	//"fmt"
-	//_ "github.com/go-sql-driver/mysql"
-	//"github.com/leonardprado/casaresuser/models"
-	//"github.com/leonardprado/casaresuser/tools"
+	"fmt"
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/leonardprado/casaresuser/models"
+	"github.com/leonardprado/casaresuser/tools"
 )
-//func SignUp(sig models.SignUp) error {
-	/*
+func SignUp(sig models.SignUp) error {
+	
 	fmt.Println("Comienza Registro")
 
 	err := DbConnect()
@@ -23,8 +23,8 @@ import (
 	}
 	fmt.Println("SignUp > Ejecución Exitosa")
 	return nil
-	*/
-//}
+
+}
 
 
 
